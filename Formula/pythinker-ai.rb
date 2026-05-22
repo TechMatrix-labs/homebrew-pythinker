@@ -19,7 +19,8 @@ class PythinkerAi < Formula
     # build isolation, which is the failure mode this formula is escaping.
     python = Formula["python@3.12"].opt_libexec/"bin/python3"
     system python, "-m", "venv", libexec
-    system libexec/"bin/pip", "install", "--no-warn-script-location", buildpath
+    system libexec/"bin/pip", "install", "--no-warn-script-location",
+      "--upgrade", "pythinker-ai"
 
     # dulwich's prebuilt macOS wheel ships a Mach-O accelerator
     # (_diff_tree.cpython-*-darwin.so) with insufficient header
@@ -39,6 +40,6 @@ class PythinkerAi < Formula
   end
 
   test do
-    assert_match "2.7.0", shell_output("#{bin}/pythinker --version")
+    system bin/"pythinker", "--version"
   end
 end

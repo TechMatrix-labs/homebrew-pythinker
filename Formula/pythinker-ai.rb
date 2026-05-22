@@ -20,6 +20,21 @@ class PythinkerAi < Formula
     python = Formula["python@3.12"].opt_libexec/"bin/python3"
     system python, "-m", "venv", libexec
     system libexec/"bin/pip", "install", "--no-warn-script-location", buildpath
+
+    # dulwich's prebuilt macOS wheel ships a Mach-O accelerator
+    # (_diff_tree.cpython-*-darwin.so) with insufficient header
+    # padding for Homebrew's post-install pass to rewrite its
+    # `install_name` to the absolute Cellar path. Rebuild dulwich
+    # from sdist with `PURE=1`, which disables the C accelerator
+    # entirely — there's no dylib left to relocate, and dulwich
+    # transparently falls back to its pure-Python diff/pack/object
+    # implementations (used here only by Pythinker's memory-commit
+    # codepath, where perf is non-critical).
+    ENV["PURE"] = "1"
+    system libexec/"bin/pip", "install", "--force-reinstall",
+      "--no-binary=dulwich", "--no-deps", "--no-warn-script-location",
+      "dulwich"
+
     bin.install_symlink libexec/"bin/pythinker"
   end
 

@@ -5,8 +5,8 @@ class PythinkerCode < Formula
 
   desc "Terminal-native review-first AI engineering agent"
   homepage "https://pythinker.com"
-  url "https://files.pythonhosted.org/packages/2b/9e/d0d5c4cbddcb57c179022f345b4c413a1eb327336d233ee50a1314a9bf4a/pythinker_code-0.16.0.tar.gz"
-  sha256 "c71e93fd51d6cf4650f3078c6390bb11cf988a79b4e398f2ecb56a45cfc1b762"
+  url "https://files.pythonhosted.org/packages/24/22/bdbc5ab5d074ec02e8e27e06a269d9cc07f0f0865253b007239800c0e98e/pythinker_code-0.17.0.tar.gz"
+  sha256 "1626c62963c80c10f0255615fe53d7de5bc85c2f7bea87b6f42c6e3f5938bb36"
   license "Apache-2.0"
 
   depends_on "python@3.13"
@@ -127,8 +127,8 @@ class PythinkerCode < Formula
   end
 
   resource "cyclopts" do
-    url "https://files.pythonhosted.org/packages/cb/42/33977afb50c23345551c973fa1d25458d946ad6937373a73acd99ae21d9b/cyclopts-4.16.0.tar.gz"
-    sha256 "6a07b8ada2fa3d7611e227a98b661523c39644a50e04c92839832d9f599f398d"
+    url "https://files.pythonhosted.org/packages/34/07/bf61d13de86d96a4c46aff00c9ca0eced44bcc8c3e16280605c1253e5720/cyclopts-4.16.1.tar.gz"
+    sha256 "8aa47bf92a5fb33abca5af05e576eecdb0d2f79893ad29238046df78370fc4a8"
   end
 
   resource "dateparser" do

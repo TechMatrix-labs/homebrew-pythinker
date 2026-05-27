@@ -5,8 +5,8 @@ class PythinkerCode < Formula
 
   desc "Terminal-native review-first AI engineering agent"
   homepage "https://pythinker.com"
-  url "https://files.pythonhosted.org/packages/24/22/bdbc5ab5d074ec02e8e27e06a269d9cc07f0f0865253b007239800c0e98e/pythinker_code-0.17.0.tar.gz"
-  sha256 "1626c62963c80c10f0255615fe53d7de5bc85c2f7bea87b6f42c6e3f5938bb36"
+  url "https://files.pythonhosted.org/packages/ff/b9/d372a7032b5f7372612c4a5aa55fb53435b49db019e36d3006e455afc1a0/pythinker_code-0.18.0.tar.gz"
+  sha256 "0ba68cd1cb17545a51139ebb1d4fcbcb6c0be64107249ba7f2c1c45b5e81da09"
   license "Apache-2.0"
 
   depends_on "python@3.13"
@@ -207,8 +207,8 @@ class PythinkerCode < Formula
   end
 
   resource "httptools" do
-    url "https://files.pythonhosted.org/packages/b5/46/120a669232c7bdedb9d52d4aeae7e6c7dfe151e99dc70802e2fc7a5e1993/httptools-0.7.1.tar.gz"
-    sha256 "abd72556974f8e7c74a259655924a717a2365b236c882c3f6f8a45fe94703ac9"
+    url "https://files.pythonhosted.org/packages/43/e5/d471fcb0e14523fe1c3f4ba58ca52480e7bd70ad7109a3846bc75892f7fb/httptools-0.8.0.tar.gz"
+    sha256 "6b2a32f18d97e16e90827d7a819ffa8dbd8cc245fc4e1fa9d1095b54ef4bd999"
   end
 
   resource "httpx" do
@@ -257,8 +257,8 @@ class PythinkerCode < Formula
   end
 
   resource "joserfc" do
-    url "https://files.pythonhosted.org/packages/1b/cb/52e479f20804904f5df20ac4539d292dcecd1287aaa33cba1d1def1d9d8e/joserfc-1.6.7.tar.gz"
-    sha256 "6999fe89457069ecacd8cc797c88a805f83054dd883333fa0409f74b46479fd7"
+    url "https://files.pythonhosted.org/packages/5d/ac/d4fd5b30f82900eac60d765f179f0ba005825ac462cc8ced6e13ec685ab3/joserfc-1.6.8.tar.gz"
+    sha256 "878620c553a6ebdd76ccdc356782fee3f735f21a356d079a546b42a4670ace5f"
   end
 
   resource "jsonref" do

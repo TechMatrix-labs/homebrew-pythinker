@@ -3,30 +3,30 @@
 class PythinkerCode < Formula
   desc "Terminal-native review-first AI engineering agent"
   homepage "https://pythinker.com"
-  version "0.20.0"
+  version "0.21.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.20.0/pythinker-0.20.0-aarch64-apple-darwin.tar.gz"
-      sha256 "bc48b91123c59ccf48a552a81123fd2e011cfa2094a895d5e9e852c99f03d7bb"
+      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.21.0/pythinker-0.21.0-aarch64-apple-darwin.tar.gz"
+      sha256 "7f1c6ca915e1228c442ccb200793a1f95719ad4e78225c3e127f15b114715f6f"
     end
 
     on_intel do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.20.0/pythinker-0.20.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8e77b842154db1dddc2b06f91b0db2b02a9bc8a8dd862b8a0d086188ebaf255d"
+      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.21.0/pythinker-0.21.0-x86_64-apple-darwin.tar.gz"
+      sha256 "a9b54414ccb0a6613879f4464ec8af7276cd89f559e0a33658702e2c27a67712"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.20.0/pythinker-0.20.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8b50a27f5f932c9f3b3a9089a47c361cb53b6e99b7d910dd8265fbff5b014e5b"
+      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.21.0/pythinker-0.21.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ddb558c716f38152cf7f6b7d6a8116c6ce45ec2f10b4f8d45123bcb0fa5f9ec3"
     end
 
     on_intel do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.20.0/pythinker-0.20.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "706fd5752a7928f85f96e27325c70fa46a4c302e655f32d324c0be45c15aab0e"
+      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.21.0/pythinker-0.21.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5dd42346759198dd737ba3679bc8365782f54a06069040963c7f90414779ddd4"
     end
   end
 
